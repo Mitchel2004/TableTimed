@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class LoadTeacher : MonoBehaviour
@@ -18,7 +19,7 @@ public class LoadTeacher : MonoBehaviour
     {
         teacherName.text = names[Random.Range(0, names.Count)];
         availableDays.text = days[Random.Range(0, days.Count)].text;
-        //availableDays.text += "\n" + days[Random.Range(0, days.Count)];
+        //availableDays.text += ", " + days[Random.Range(0, days.Count)].text;
 
         int startTime = Random.Range(9, 16);
         int endTime = Random.Range(startTime + 1, 17);
@@ -31,6 +32,11 @@ public class LoadTeacher : MonoBehaviour
     IEnumerator DisappearDelay()
     {
         yield return new WaitForSeconds(disappearDelay);
+
+        GameObject.Find("Timetable Panel").GetComponent<LoadTimetable>().enabled = true;
+        GameObject.Find("Reject").GetComponent<Button>().interactable = true;
+        GameObject.Find("Approve").GetComponent<Button>().interactable = true;
+        GameObject.Find("Timer").GetComponent<Timer>().enabled = true;
 
         gameObject.SetActive(false);
     }

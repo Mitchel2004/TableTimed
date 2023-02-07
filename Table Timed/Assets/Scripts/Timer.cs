@@ -6,7 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private float timerSeconds;
-    
+
     private void Update()
     {
         if(timerSeconds <= 0)
