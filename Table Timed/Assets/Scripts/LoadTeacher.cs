@@ -5,6 +5,8 @@ using TMPro;
 
 public class LoadTeacher : MonoBehaviour
 {
+    [SerializeField] private float disappearDelay;
+
     [SerializeField] public List<string> names = new List<string>();
     [SerializeField] private List<TextMeshProUGUI> days = new List<TextMeshProUGUI>();
 
@@ -22,5 +24,14 @@ public class LoadTeacher : MonoBehaviour
         int endTime = Random.Range(startTime + 1, 17);
 
         availableTimes.text = $"{startTime}:00 – {endTime}:00";
+
+        StartCoroutine(DisappearDelay());
+    }
+
+    IEnumerator DisappearDelay()
+    {
+        yield return new WaitForSeconds(disappearDelay);
+
+        gameObject.SetActive(false);
     }
 }
