@@ -57,11 +57,25 @@ public class CheckAnswer : MonoBehaviour
 
                 if(timeBlock.Find("Classroom").GetComponent<TextMeshProUGUI>().text == teacher.classroom)
                 {
-                    print("yes");
+                    if(name == "Reject")
+                    {
+                        Right();
+                    }
+                    else
+                    {
+                        Wrong();
+                    }
                 }
                 else
                 {
-                    print("no");
+                    if(name == "Reject")
+                    {
+                        Wrong();
+                    }
+                    else
+                    {
+                        Right();
+                    }
                 }
 
                 break;
@@ -79,7 +93,7 @@ public class CheckAnswer : MonoBehaviour
 
     private void Right()
     {
-        GameObject.Find("Timer").GetComponent<Timer>().IncreaseTimer(10f);
+        GameObject.Find("Timer").GetComponent<Timer>().IncreaseTimer(5f);
         GameObject.Find("Level").GetComponent<Level>().NextLevel();
         GameObject.Find("Reject").GetComponent<Button>().interactable = false;
         GameObject.Find("Approve").GetComponent<Button>().interactable = false;

@@ -1956,6 +1956,9 @@ MonoBehaviour:
     name: 
     days: []
   teachers: []
+  classroom: 
+  startTime: 0
+  randomDay: 0
 --- !u!114 &237932252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17262,7 +17265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abdd7a58c71d3f2478afc7a3d1f3af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerSeconds: 60
+  timerSeconds: 10
 --- !u!1 &1735258162
 GameObject:
   m_ObjectHideFlags: 0
