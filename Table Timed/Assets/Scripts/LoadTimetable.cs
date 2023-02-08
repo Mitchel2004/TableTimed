@@ -15,7 +15,7 @@ public class LoadTimetable : MonoBehaviour
         {
             if(Random.value >= 0.5f)
             {
-                name.GetComponent<TextMeshProUGUI>().text = teacher.names[Random.Range(0, teacher.names.Count)];
+                name.GetComponent<TextMeshProUGUI>().text = teacher.defaultNames[Random.Range(0, teacher.defaultNames.Count)];
 
                 name.transform.parent.Find("Classroom").GetComponent<TextMeshProUGUI>().text = Random.Range(1, 200).ToString("000");
 
