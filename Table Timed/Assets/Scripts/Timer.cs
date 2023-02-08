@@ -26,4 +26,9 @@ public class Timer : MonoBehaviour
             }
         }
     }
+
+    public void IncreaseTimer(float seconds)
+    {
+        timerSeconds += seconds;
+    }
 }

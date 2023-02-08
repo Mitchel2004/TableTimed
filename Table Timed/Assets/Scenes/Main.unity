@@ -1778,7 +1778,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 145.59999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &231987166
 MonoBehaviour:
@@ -1938,7 +1938,14 @@ MonoBehaviour:
   - Jelle Sjollema
   - Jesse Wissink
   - Alex Kentie
+  - Rogier Stam
+  - Silvan Herrema
+  - Dragan Javorac
+  - Maureen de Windt
+  - Milos Despotovic
   - Paul Schooneman
+  - Erwin Henraat
+  - Erik Willems
   defaultWeekDays:
   - {fileID: 526424138}
   - {fileID: 343173633}
@@ -2421,7 +2428,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 145.59999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315810489
 MonoBehaviour:
@@ -3544,7 +3551,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 145.59999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &450813797
 MonoBehaviour:
@@ -13837,7 +13844,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 145.59999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356131730
 MonoBehaviour:
@@ -17434,7 +17441,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 145.59999, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741784395
 MonoBehaviour:
@@ -19349,9 +19356,9 @@ MonoBehaviour:
     m_Bottom: 12
   m_ChildAlignment: 4
   m_Spacing: 12
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
+  m_ChildControlWidth: 0
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
