@@ -7,11 +7,14 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private float timerSeconds;
 
+    [SerializeField] private GameObject gameOverScreen;
+
     private void Update()
     {
         if(timerSeconds <= 0)
         {
-            Debug.Log("Game Over");
+            gameOverScreen.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {

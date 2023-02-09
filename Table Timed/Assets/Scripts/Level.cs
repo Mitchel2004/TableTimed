@@ -5,7 +5,7 @@ using TMPro;
 
 public class Level : MonoBehaviour
 {
-    public int currentLevel;
+    private int currentLevel = 1;
 
     public void NextLevel()
     {

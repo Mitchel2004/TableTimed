@@ -6,8 +6,7 @@ using TMPro;
 
 public class CheckAnswer : MonoBehaviour
 {
-    [SerializeField] private GameObject teacherPanel;
-    [SerializeField] private LoadTeacher teacher;
+    [SerializeField] private LoadPrompt teacher;
 
     public void Check()
     {
@@ -88,7 +87,7 @@ public class CheckAnswer : MonoBehaviour
         GameObject.Find("Reject").GetComponent<Button>().interactable = false;
         GameObject.Find("Approve").GetComponent<Button>().interactable = false;
         GameObject.Find("Timetable Panel").GetComponent<LoadTimetable>().enabled = false;
-        teacherPanel.SetActive(true);
+        teacher.gameObject.SetActive(true);
     }
 
     private void Right()
@@ -98,6 +97,6 @@ public class CheckAnswer : MonoBehaviour
         GameObject.Find("Reject").GetComponent<Button>().interactable = false;
         GameObject.Find("Approve").GetComponent<Button>().interactable = false;
         GameObject.Find("Timetable Panel").GetComponent<LoadTimetable>().enabled = false;
-        teacherPanel.SetActive(true);
+        teacher.gameObject.SetActive(true);
     }
 }
