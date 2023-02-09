@@ -5,7 +5,7 @@ using TMPro;
 
 public class Level : MonoBehaviour
 {
-    private int currentLevel = 1;
+    [SerializeField] private int currentLevel;
 
     public void NextLevel()
     {

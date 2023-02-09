@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
 
             GetComponent<TextMeshProUGUI>().text = $"{minutes}:{seconds}";
 
-            if(GameObject.Find("Teacher Panel") == null)
+            if(GameObject.Find("Prompt Panel") == null)
             {
                 timerSeconds -= 1 * Time.deltaTime;
             }

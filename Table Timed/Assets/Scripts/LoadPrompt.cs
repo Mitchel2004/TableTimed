@@ -7,25 +7,23 @@ using TMPro;
 public class LoadPrompt : MonoBehaviour
 {
     [SerializeField] private GameObject prompt;
+    [SerializeField] public List<TextMeshProUGUI> days = new List<TextMeshProUGUI>();
 
-    [SerializeField] public List<TextMeshProUGUI> defaultWeekDays = new List<TextMeshProUGUI>();
-    private List<TextMeshProUGUI> weekDays = new List<TextMeshProUGUI>();
-
-    private float disappearDelay = 5;
+    [SerializeField] private float disappearDelay;
 
     public int randomDay;
-    public string classroom;
+    public string randomClassroom;
     public int startTime;
 
     private void OnEnable()
     {
         GameObject newPrompt = Instantiate(prompt, transform);
 
-        classroom = Random.Range(201, 206).ToString("000");
+        randomDay = Random.Range(0, days.Count);
+        randomClassroom = Random.Range(201, 206).ToString("000");
         startTime = Random.Range(9, 16);
-        randomDay = Random.Range(0, defaultWeekDays.Count);
 
-        newPrompt.GetComponentInChildren<TextMeshProUGUI>().text = $"{defaultWeekDays[randomDay].text}\n{classroom}\n{startTime}:00-{startTime + 1}:00";
+        newPrompt.GetComponentInChildren<TextMeshProUGUI>().text = $"{days[randomDay].text}\n{randomClassroom}\n{startTime}:00-{startTime + 1}:00";
 
         StartCoroutine(DisappearDelay());
     }
